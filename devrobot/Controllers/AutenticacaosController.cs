@@ -23,14 +23,9 @@ namespace devrobot.Controllers
 
         // GET: api/Autenticacaos
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Autenticacao>>> GetAutenticacao()
+        public async Task<ActionResult<IEnumerable<Autenticacao>>> GetAutenticacao(string user,string password)
         {
-            return await _context.Autenticacao.ToListAsync();
-        }
-
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Autenticacao>>> GetUserAndSenha(string user, string password) {
-            return await _context.Autenticacao.Where(a=>a.User == user && a.Senha == password).ToListAsync();
+            return await _context.Autenticacao.Where(a => a.User == user && a.Senha == password).ToListAsync();
         }
 
         // GET: api/Autenticacaos/5
@@ -46,6 +41,8 @@ namespace devrobot.Controllers
 
             return autenticacao;
         }
+
+
 
         // PUT: api/Autenticacaos/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
