@@ -185,3 +185,4 @@ C:\Users\renatolacerda\source\repos\devrobot\devrobot\bin\Debug\netcoreapp3.1\ru
 C:\Users\renatolacerda\source\repos\devrobot\devrobot\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\renatolacerda\source\repos\devrobot\devrobot\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\renatolacerda\source\repos\devrobot\devrobot\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\renatolacerda\source\repos\devrobot\devrobot\obj\Debug\netcoreapp3.1\devrobot.csprojAssemblyReference.cache

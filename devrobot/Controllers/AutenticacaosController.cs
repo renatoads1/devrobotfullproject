@@ -28,6 +28,11 @@ namespace devrobot.Controllers
             return await _context.Autenticacao.ToListAsync();
         }
 
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Autenticacao>>> GetUserAndSenha(string user, string password) {
+            return await _context.Autenticacao.Where(a=>a.User == user && a.Senha == password).ToListAsync();
+        }
+
         // GET: api/Autenticacaos/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Autenticacao>> GetAutenticacao(int id)
