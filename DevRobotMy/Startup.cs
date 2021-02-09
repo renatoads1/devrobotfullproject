@@ -1,6 +1,7 @@
 using DevRobotMy.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
@@ -27,13 +28,20 @@ namespace DevRobotMy
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.Configure<ForwardedHeadersOptions>(options =>
+            {
+                options.ForwardedHeaders =
+                    ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
+            });
+
             string mySqlConnectionStr = Configuration.GetConnectionString("DefaultConnection");
 
             services.AddDbContextPool<ApplicationDbContext>(options => 
             options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
 
             services.AddDefaultIdentity<IdentityUser>(options => 
-            options.SignIn.RequireConfirmedAccount = true)
+            options.SignIn.RequireConfirmedAccount = false)
             .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddControllersWithViews();
@@ -55,7 +63,6 @@ namespace DevRobotMy
                 //options.AccessDeniedPath = "controler/action";
                 options.SlidingExpiration = true;//recarrega o coockie antes de expirar
             });
-
 
             services.AddAuthentication().AddFacebook(facebookOptions => {
                     facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
@@ -91,12 +98,14 @@ namespace DevRobotMy
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseForwardedHeaders();
                 //app.UseDatabaseErrorPage();
             }
             else
             {
                 app.UseDeveloperExceptionPage();
                 //app.UseExceptionHandler("/Home/Error");
+                app.UseForwardedHeaders();
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
