@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SUxH2vJxe0UnumM8uA0QkAOy75csFeIU5TxDiyUAQGM1qC+UfdGWRcw/fBZ+MEu+xRl1xBsFBc7hGHd3LhfgCw==",
+  "dgSpecHash": "ARGI1VfdEmUpo9C7hGqkVvC6ygG9H/W7EeFbgrwTdMhCZZ4egv5GJ5om4FwXv5GXIJ7Ufj2//QFCdCmcLUbrGQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\renatolacerda\\source\\repos\\devrobot\\DevRobotMy\\DevRobotMy.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\renatolacerda\\.nuget\\packages\\aspnet.security.oauth.linkedin\\3.0.0\\aspnet.security.oauth.linkedin.3.0.0.nupkg.sha512",
     "C:\\Users\\renatolacerda\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\renatolacerda\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\3.0.0\\microsoft.aspnetcore.authentication.facebook.3.0.0.nupkg.sha512",
     "C:\\Users\\renatolacerda\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\3.0.0\\microsoft.aspnetcore.authentication.google.3.0.0.nupkg.sha512",

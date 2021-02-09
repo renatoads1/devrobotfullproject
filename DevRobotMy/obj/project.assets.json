@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.0": {
+      "AspNet.Security.OAuth.LinkedIn/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/AspNet.Security.OAuth.LinkedIn.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/AspNet.Security.OAuth.LinkedIn.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -1430,6 +1442,20 @@
     }
   },
   "libraries": {
+    "AspNet.Security.OAuth.LinkedIn/3.0.0": {
+      "sha512": "PY0yVKO1wMHhEtTu/jE3gbAQ24pGm7qsKHKy6cqKpdfDS6QSe2qGjibI6wmCdv9uXX6KrBvkRANMEJ5GpCeV4A==",
+      "type": "package",
+      "path": "aspnet.security.oauth.linkedin/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspnet.security.oauth.linkedin.3.0.0.nupkg.sha512",
+        "aspnet.security.oauth.linkedin.nuspec",
+        "lib/netcoreapp3.0/AspNet.Security.OAuth.LinkedIn.dll",
+        "lib/netcoreapp3.0/AspNet.Security.OAuth.LinkedIn.xml",
+        "package-icon.png"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -5438,6 +5464,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
+      "AspNet.Security.OAuth.LinkedIn >= 3.0.0",
       "Microsoft.AspNetCore.Authentication.Facebook >= 3.0.0",
       "Microsoft.AspNetCore.Authentication.Google >= 3.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.0",
@@ -5485,6 +5512,10 @@
       "netcoreapp3.0": {
         "targetAlias": "netcoreapp3.0",
         "dependencies": {
+          "AspNet.Security.OAuth.LinkedIn": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "Microsoft.AspNetCore.Authentication.Facebook": {
             "target": "Package",
             "version": "[3.0.0, )"
