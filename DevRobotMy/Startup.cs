@@ -75,22 +75,7 @@ namespace DevRobotMy
                 linkedinOptions.ClientSecret = Configuration["Authentication:Linkedin:ClientSecret"];
                 //linkedinOptions.SaveTokens = true;
             });
-
-                //AddMicrosoftAccount(microsoftOptions => {
-                //    facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
-                //    facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
-                //}).
-                //AddGoogle(googleOptions => {
-                //    facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
-                //    facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
-                //}).
-                //AddTwitter(twitterOptions => {
-                //    facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
-                //    facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
-                //}).
-
-
-            }
+        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
             public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
