@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*!
 * Start Bootstrap - Freelancer v6.0.5 (https://startbootstrap.com/theme/freelancer)
 * Copyright 2013-2020 Start Bootstrap
@@ -6074,6 +6074,10 @@ a.close.disabled {
 
 .bg-primary {
   background-color: #1abc9c !important;
+}
+
+.bg-smoking {
+    background-color: #6f6f6f;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,

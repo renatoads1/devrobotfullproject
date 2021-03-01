@@ -83,3 +83,4 @@ C:\Users\renatolacerda\source\repos\devrobot\DevRobotMy\obj\Debug\netcoreapp3.0\
 C:\Users\renatolacerda\source\repos\devrobot\DevRobotMy\obj\Debug\netcoreapp3.0\DevRobotMy.dll
 C:\Users\renatolacerda\source\repos\devrobot\DevRobotMy\obj\Debug\netcoreapp3.0\DevRobotMy.pdb
 C:\Users\renatolacerda\source\repos\devrobot\DevRobotMy\obj\Debug\netcoreapp3.0\DevRobotMy.genruntimeconfig.cache
+C:\Users\renatolacerda\source\repos\devrobot\DevRobotMy\obj\Debug\netcoreapp3.0\DevRobotMy.csprojAssemblyReference.cache

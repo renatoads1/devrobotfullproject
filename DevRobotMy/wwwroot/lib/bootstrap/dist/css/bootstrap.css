@@ -7025,11 +7025,14 @@ a.close.disabled {
 .bg-primary {
     background-color: #325d88 !important;
 }
-
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
     background-color: #244463 !important;
+}
+
+.bg-smoking {
+    background-color: #6f6f6f;
 }
 
 .bg-secondary {
