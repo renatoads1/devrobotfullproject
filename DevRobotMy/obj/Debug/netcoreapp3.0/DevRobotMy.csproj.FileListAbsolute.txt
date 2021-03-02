@@ -84,3 +84,4 @@ C:\Users\renatolacerda\source\repos\devrobot\DevRobotMy\obj\Debug\netcoreapp3.0\
 C:\Users\renatolacerda\source\repos\devrobot\DevRobotMy\obj\Debug\netcoreapp3.0\DevRobotMy.pdb
 C:\Users\renatolacerda\source\repos\devrobot\DevRobotMy\obj\Debug\netcoreapp3.0\DevRobotMy.genruntimeconfig.cache
 C:\Users\renatolacerda\source\repos\devrobot\DevRobotMy\obj\Debug\netcoreapp3.0\DevRobotMy.csprojAssemblyReference.cache
+C:\Users\renatolacerda\source\repos\devrobot\DevRobotMy\obj\Debug\netcoreapp3.0\Razor\Views\Home\AreaDoCliente.cshtml.g.cs
