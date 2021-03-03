@@ -1,4 +1,5 @@
 using DevRobotMy.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -12,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace DevRobotMy
@@ -40,8 +42,22 @@ namespace DevRobotMy
             services.AddDbContextPool<ApplicationDbContext>(options => 
             options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
 
+            //em teste
+            services.AddAuthorization(opt=> {
+                opt.FallbackPolicy = new AuthorizationPolicyBuilder()
+            .RequireAuthenticatedUser()
+            .Build();
+
+                //ok
+                opt.AddPolicy("Adm", policy => policy.RequireClaim(ClaimTypes.Role, new string[] {"Adm","RENATOADS1@GMAIL.COM" }));
+                //opt.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
+            });
+
+
             services.AddDefaultIdentity<IdentityUser>(options => 
             options.SignIn.RequireConfirmedAccount = false)
+                    //adiciona regras 
+                .AddRoles<IdentityRole>()
             .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddControllersWithViews();

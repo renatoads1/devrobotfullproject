@@ -33,6 +33,11 @@ namespace DevRobotMy.Controllers
         public IActionResult AreaDoCliente() {
             return View();
         }
+        [Authorize(Policy="Adm")]
+        public IActionResult Admin()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
