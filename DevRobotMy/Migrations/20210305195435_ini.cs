@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DevRobotMy.Migrations
 {
-    public partial class InicialMysql : Migration
+    public partial class ini : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -60,6 +60,34 @@ namespace DevRobotMy.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Autenticacao", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Clientes",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    Nome = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Clientes", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Produtos",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    Nome = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
+                    Peso = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true),
+                    Cor = table.Column<string>(type: "longtext CHARACTER SET utf8mb4", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Produtos", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -225,6 +253,12 @@ namespace DevRobotMy.Migrations
 
             migrationBuilder.DropTable(
                 name: "Autenticacao");
+
+            migrationBuilder.DropTable(
+                name: "Clientes");
+
+            migrationBuilder.DropTable(
+                name: "Produtos");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

@@ -49,8 +49,9 @@ namespace DevRobotMy
             .Build();
 
                 //ok
-                opt.AddPolicy("Adm", policy => policy.RequireClaim(ClaimTypes.Role, new string[] {"Adm","RENATOADS1@GMAIL.COM" }));
+                //opt.AddPolicy("Adm", policy => policy.RequireClaim(ClaimTypes.Role, new string[] {"Adm","RENATOADS1@GMAIL.COM" }));
                 //opt.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
+                opt.AddPolicy("Adm", policy => policy.RequireClaim("Adm"));
             });
 
 

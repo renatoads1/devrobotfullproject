@@ -15,5 +15,8 @@ namespace DevRobotMy.Data
 
         }
         public DbSet<Autenticacao> Autenticacao { get; set; }
+        public DbSet<Clientes> Clientes { get; set; }
+        public DbSet<Produtos> Produtos { get; set; }
+        
     }
 }

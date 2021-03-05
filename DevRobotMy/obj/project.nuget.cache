@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ARGI1VfdEmUpo9C7hGqkVvC6ygG9H/W7EeFbgrwTdMhCZZ4egv5GJ5om4FwXv5GXIJ7Ufj2//QFCdCmcLUbrGQ==",
+  "dgSpecHash": "0yq3Uh+N1bGVaEm8jbgpTVl9FXnOnzACRSeM0ez8FaP1pksX9fBekwY66dRnsmYDIdyhLFmMloZ2BZExJINUJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\renatolacerda\\source\\repos\\devrobot\\DevRobotMy\\DevRobotMy.csproj",
+  "projectFilePath": "C:\\Users\\renatolacerda\\source\\repos\\devrobotfullproject\\DevRobotMy\\DevRobotMy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\renatolacerda\\.nuget\\packages\\aspnet.security.oauth.linkedin\\3.0.0\\aspnet.security.oauth.linkedin.3.0.0.nupkg.sha512",
     "C:\\Users\\renatolacerda\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

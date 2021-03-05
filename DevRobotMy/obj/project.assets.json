@@ -5481,11 +5481,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\renatolacerda\\source\\repos\\devrobot\\DevRobotMy\\DevRobotMy.csproj",
+      "projectUniqueName": "C:\\Users\\renatolacerda\\source\\repos\\devrobotfullproject\\DevRobotMy\\DevRobotMy.csproj",
       "projectName": "DevRobotMy",
-      "projectPath": "C:\\Users\\renatolacerda\\source\\repos\\devrobot\\DevRobotMy\\DevRobotMy.csproj",
+      "projectPath": "C:\\Users\\renatolacerda\\source\\repos\\devrobotfullproject\\DevRobotMy\\DevRobotMy.csproj",
       "packagesPath": "C:\\Users\\renatolacerda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\renatolacerda\\source\\repos\\devrobot\\DevRobotMy\\obj\\",
+      "outputPath": "C:\\Users\\renatolacerda\\source\\repos\\devrobotfullproject\\DevRobotMy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\renatolacerda\\AppData\\Roaming\\NuGet\\NuGet.Config"

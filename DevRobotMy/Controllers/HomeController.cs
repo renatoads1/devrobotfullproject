@@ -2,10 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace DevRobotMy.Controllers
@@ -17,6 +14,7 @@ namespace DevRobotMy.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            
         }
 
         public IActionResult Index()
@@ -44,5 +42,6 @@ namespace DevRobotMy.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }
