@@ -5,7 +5,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\renatolacerda\Desktop\publicdevrobotnew\devrobot\devrobot.com.br</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\Renato\OneDrive\Área de Trabalho\publish\devrobot\devrobot.com.br</_PublishTargetUrl>
+    <History>True|2021-03-24T02:40:21.0551990Z;False|2021-03-23T23:09:22.2777219-03:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <DestinationConnectionStrings Include="DefaultConnection">
