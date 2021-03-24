@@ -5476,24 +5476,36 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\renatolacerda\\.nuget\\packages\\": {}
+    "C:\\Users\\Renato\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\renatolacerda\\source\\repos\\devrobotfullproject\\DevRobotMy\\DevRobotMy.csproj",
+      "projectUniqueName": "C:\\Users\\Renato\\source\\repos\\devrobotfullproject\\devrobotfullproject\\DevRobotMy\\DevRobotMy.csproj",
       "projectName": "DevRobotMy",
-      "projectPath": "C:\\Users\\renatolacerda\\source\\repos\\devrobotfullproject\\DevRobotMy\\DevRobotMy.csproj",
-      "packagesPath": "C:\\Users\\renatolacerda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\renatolacerda\\source\\repos\\devrobotfullproject\\DevRobotMy\\obj\\",
+      "projectPath": "C:\\Users\\Renato\\source\\repos\\devrobotfullproject\\devrobotfullproject\\DevRobotMy\\DevRobotMy.csproj",
+      "packagesPath": "C:\\Users\\Renato\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Renato\\source\\repos\\devrobotfullproject\\devrobotfullproject\\DevRobotMy\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\renatolacerda\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Renato\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5569,7 +5581,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
