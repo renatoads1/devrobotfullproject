@@ -6,7 +6,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\Users\Renato\OneDrive\Área de Trabalho\publish\devrobot\devrobot.com.br</_PublishTargetUrl>
-    <History>True|2021-03-24T02:40:21.0551990Z;False|2021-03-23T23:09:22.2777219-03:00;</History>
+    <History>True|2021-03-24T03:50:54.5240024Z;True|2021-03-24T00:34:34.4530777-03:00;True|2021-03-24T00:22:23.7281201-03:00;True|2021-03-24T00:10:53.1781155-03:00;True|2021-03-23T23:40:21.0551990-03:00;False|2021-03-23T23:09:22.2777219-03:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <DestinationConnectionStrings Include="DefaultConnection">

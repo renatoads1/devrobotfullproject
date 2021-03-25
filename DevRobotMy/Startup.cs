@@ -1,4 +1,5 @@
 using DevRobotMy.Data;
+using DevRobotMy.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,7 +31,10 @@ namespace DevRobotMy
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            //serviço de emaiil
+            services.Configure<EmailSettings>(Configuration.GetSection("EmailSettings"));
+            services.AddTransient<IEmailSender, AuthMessageSender>();
+            //outros serviços
             services.Configure<ForwardedHeadersOptions>(options =>
             {
                 options.ForwardedHeaders =
